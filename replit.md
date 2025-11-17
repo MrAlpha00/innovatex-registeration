@@ -4,6 +4,16 @@
 
 InnovateX Registration & Certificate Portal is a full-stack web application for managing team registrations and certificate distribution for InnovateX events. The application features a modern, cyberpunk-inspired design with a black background and neon green accents. Users can register their teams (2-4 members) and retrieve participation certificates via email lookup. The system automatically generates certificates for all team members upon registration.
 
+## Recent Changes
+
+**November 17, 2025 - Migrated from Vercel to Replit**
+- Successfully migrated project to Replit environment
+- Installed all dependencies using npm (package manager detected from package-lock.json)
+- Verified existing Vite configuration already uses port 5000 and host 0.0.0.0 (Replit-compatible)
+- Started development workflow (npm run dev) successfully
+- Verified TypeScript compilation passes with `npm run check`
+- Confirmed application loads and displays correctly (cyberpunk design with neon green accents)
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -101,7 +111,16 @@ Currently, the application does not implement authentication or authorization. A
 - `@replit/vite-plugin-*` - Replit development environment integration
 
 **Deployment**
-- Static site deployment to Vercel or Render
-- Build output directory: `dist`
-- Build command: `vite build`
-- No server runtime required
+
+*Development on Replit:*
+- Development server runs on port 5000 with host 0.0.0.0 for Replit compatibility
+- Dev command: `npm run dev` (configured in workflow)
+- Vite dev server provides hot module replacement for fast development
+- Package manager: npm (detected from package-lock.json)
+
+*Production Deployment:*
+- Static site deployment to Vercel, Render, or Replit Deployments
+- Build output directory: `dist/public` (configured in vite.config.ts)
+- Build command: `npm run build` (runs `vite build`)
+- No server runtime required (static site)
+- Deployment target: Autoscale (stateless static site)

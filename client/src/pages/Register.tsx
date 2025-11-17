@@ -49,7 +49,7 @@ export default function Register() {
       toast({
         variant: "destructive",
         title: "Registration Failed",
-        description: "An error occurred. Please try again.",
+        description: error.message || "An error occurred. Please try again.",
       });
     },
   });
