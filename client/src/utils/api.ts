@@ -1,7 +1,7 @@
 import { type InsertTeam, type Certificate } from "@/shared/schema";
 
 // Google Apps Script Web App URL
-export const API_BASE = "https://script.google.com/macros/s/AKfycbyXnJuxNouj-3xDHKU2O9aS5-i6ybGZEGwKhl1qqC8ZfANuxlHu6k3bgBQYWLJMIXvtOQ/exec";
+export const API_BASE = "https://script.google.com/macros/s/AKfycbwKUOtlARMRSHI3heT14t9PJwITDidg9BxU0W_erXTQ4iY-d6supxH9d_shUdXijf0W4w/exec";
 
 export interface TeamRegistrationResponse {
   success: boolean;
